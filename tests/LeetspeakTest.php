@@ -1,7 +1,7 @@
 <?php
   require_once __DIR__."/../src/Leetspeak.php";
 
-  class PingPongTest extends PHPUnit_Framework_TestCase
+  class LeetspeakTest extends PHPUnit_Framework_TestCase
     {
         function test_Leetspeak_outputInput()
         {
@@ -11,6 +11,15 @@
            $result = $newLeetspeak->convertToLeetspeak($input_string);
            //Assert
            $this->assertEquals("apply", $result);
+        }
+        function test_Leetspeak_replaceE()
+        {
+          $input_string = "real";
+
+          $newLeetspeak = new Leetspeak;
+          $result = $newLeetspeak->convertToLeetspeak($input_string);
+
+          $this->assertEquals("r3al", $result);
         }
     }
  ?>
