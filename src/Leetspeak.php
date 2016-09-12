@@ -9,6 +9,9 @@
         if($letter == "e" || $letter == "E"){
           array_push($output_array, "3");
         }
+        elseif($letter == "o" || $letter =="O"){
+          array_push($output_array, "0");
+        }
         else{
           array_push($output_array, $letter);
         }

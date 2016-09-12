@@ -21,5 +21,14 @@
 
           $this->assertEquals("r3al", $result);
         }
+        function test_Leetspeak_replaceO()
+        {
+          $input_string = "onomotopoeia";
+
+          $newLeetspeak = new Leetspeak;
+          $result = $newLeetspeak->convertToLeetspeak($input_string);
+
+          $this->assertEquals("0n0m0t0p03ia", $result);
+        }
     }
  ?>
