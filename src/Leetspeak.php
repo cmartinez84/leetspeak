@@ -5,7 +5,7 @@
     {
       $input_array = str_split($input_string);
       $output_array =array();
-      foreach($input_array as $letter){
+      foreach($input_array as $index=> $letter){
         if($letter == "e" || $letter == "E"){
           array_push($output_array, "3");
         }
@@ -14,6 +14,9 @@
         }
         elseif($letter == "I"){
           array_push($output_array, "1");
+        }
+        elseif($letter == "s" && $index !=0 ){
+          array_push($output_array, "z");
         }
         else{
           array_push($output_array, $letter);

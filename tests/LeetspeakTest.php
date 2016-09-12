@@ -39,5 +39,14 @@
 
           $this->assertEquals("1ambic P3ntam3t3r", $result);
         }
+        function test_Leetspeak_replaceS()
+        {
+          $input_string = "Sussie";
+
+          $newLeetspeak = new Leetspeak;
+          $result = $newLeetspeak->convertToLeetspeak($input_string);
+
+          $this->assertEquals("Suzzi3", $result);
+        }
     }
  ?>
