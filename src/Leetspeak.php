@@ -16,7 +16,13 @@
           array_push($output_array, "1");
         }
         elseif($letter == "s" && $index !=0 ){
-          array_push($output_array, "z");
+          if($input_array[$index-1] != " "){
+            array_push($output_array, "z");
+          }
+          else
+          {
+            array_push($output_array, $letter);
+          }
         }
         else{
           array_push($output_array, $letter);
