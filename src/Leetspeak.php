@@ -12,6 +12,9 @@
         elseif($letter == "o" || $letter =="O"){
           array_push($output_array, "0");
         }
+        elseif($letter == "I"){
+          array_push($output_array, "1");
+        }
         else{
           array_push($output_array, $letter);
         }
